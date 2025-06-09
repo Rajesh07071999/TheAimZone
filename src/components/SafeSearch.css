@@ -1,0 +1,67 @@
+.safe-search-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.safe-search-container input {
+  width: 70%;
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(0, 0, 0);
+}
+
+.safe-search-container button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background: #00c6ff;
+  border: none;
+  border-radius: 30px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.safe-search-container button:hover {
+  background: #0072ff;
+}
+
+.results {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.result-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.result-card:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.result-card a {
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.error {
+  color: #ff4444;
+  margin-top: 1rem;
+  font-weight: bold;
+}

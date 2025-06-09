@@ -1,0 +1,52 @@
+.theaimzone-footer {
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: #fff;
+  padding-top: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-brand {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 8px;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+}
+
+@media (max-width: 576px) {
+  .footer-links li {
+    display: block;
+    margin: 6px 0;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+}

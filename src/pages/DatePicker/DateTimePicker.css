@@ -1,0 +1,64 @@
+.datetime-box {
+  position: fixed;
+  right: 30px;
+  top: 140px;
+  width: 300px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .datetime-box {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+  }
+}
+
+.picker-block {
+  margin-bottom: 15px;
+}
+
+.picker-block label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.styled-picker {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+}
+
+.schedule-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: #fff;
+  color: #5e3ea1;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.schedule-btn:hover {
+  background-color: #f2f2f2;
+}

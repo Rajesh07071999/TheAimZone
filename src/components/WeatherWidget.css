@@ -1,0 +1,36 @@
+.weather-widget {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #292e32;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.weather-widget:hover {
+    transform: scale(1.02);
+}
+
+.weather-widget img {
+    width: 30px;
+    height: 30px;
+}
+
+.weather-widget .weather-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.weather-widget .temp {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.weather-widget .desc {
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    color: #000000;
+}

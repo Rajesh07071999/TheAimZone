@@ -1,0 +1,224 @@
+.helpbot-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Toggle Button (Floating Chat Icon) */
+.chat-toggle {
+  background: tomato;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 26px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.chat-toggle:hover {
+  transform: scale(1.05);
+}
+
+/* Chat Window */
+.chat-window {
+  width: 360px;
+  max-height: 90vh;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+  animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.chat-header {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  padding: 16px 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.chat-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Body */
+.chat-body {
+  flex: 1;
+  padding: 15px 18px;
+  overflow-y: auto;
+  font-size: 14px;
+  background: #fefefe;
+}
+
+.chat-entry {
+  margin-bottom: 20px;
+}
+
+.chat-question {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.chat-answer {
+  background: #f0f2f5;
+  padding: 10px 14px;
+  border-radius: 12px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Footer with Suggestions + Contact Button */
+.chat-footer {
+  background: #fafafa;
+  padding: 16px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  border-top: 1px solid #eee;
+}
+
+.faq-btn {
+  background: #ebefff;
+  border: none;
+  border-radius: 12px;
+  padding: 6px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #333;
+}
+
+.faq-btn:hover {
+  background: #d7e2ff;
+}
+
+.faq-btn:disabled {
+  background: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.contact-btn {
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: #1a5edc;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+  transition: border 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #6a11cb;
+}
+
+.contact-form button {
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #4d0ebe;
+}
+
+/* Responsive */
+@media screen and (max-width: 420px) {
+  .chat-window {
+    width: 90vw;
+    right: 10px;
+    left: 10px;
+    bottom: 80px;
+    max-height: 85vh;
+  }
+
+  .chat-toggle {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}
+.glow-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(38, 132, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(38, 132, 255, 0.5);
+  background: linear-gradient(135deg, #4d0ebe, #1a5edc);
+}
